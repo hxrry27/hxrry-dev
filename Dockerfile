@@ -3,7 +3,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN NEXT_DISABLE_TURBOPACK=1 npm run build
+RUN npm run build
 
 FROM nginx:alpine
 COPY --from=builder /app/out /usr/share/nginx/html
