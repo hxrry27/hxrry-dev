@@ -65,8 +65,8 @@ export function ShimmerText({
   delay = 1.5,
 }: ShimmerTextProps) {
   return (
-    <div className="group overflow-hidden">
-      <div>
+    <span className="group overflow-hidden">
+      <span>
         <motion.div
           className={cn(
             "inline-block [--shimmer-contrast:rgba(255,255,255,0.6)] dark:[--shimmer-contrast:rgba(0,0,0,0.5)]",
@@ -98,8 +98,8 @@ export function ShimmerText({
         >
           <span>{children}</span>
         </motion.div>
-      </div>
-    </div>
+      </span>
+    </span>
   );
 }
 
