@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="antialiased">
+    <html lang="en" className="dark antialiased">
       <body className={`min-h-svh flex flex-col font-medium text-lg ${openRunde.className}`}>{children}</body>
     </html>
   );
